@@ -3,6 +3,8 @@
 基于 fscarmen2/Argo-Xray-JS-PaaS https://github.com/fscarmen2/Argo-Xray-JS-PaaS 架构重构 的轻量级云端路由探针与环境调试容器。
 
 本项目主要用于 Serverless（无服务器）和 PaaS 环境下的应用部署测试。它提供了一个标准的边缘错误回退页面（Fallback UI），并在特定的内部路由下，支持对底层环境变量、多路复用连接进行回显与内存级运行状态追踪。
+
+
 ✨ 核心模块
 
     🎭 边缘回退处理器 (Fallback Handler)：默认对所有非授权路由返回 404 错误模板，内置打字机动效，用于验证前端静态资源的渲染能力，同时无缝过滤互联网上的无效扫描请求。
